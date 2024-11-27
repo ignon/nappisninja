@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 @media print {
@@ -81,12 +81,11 @@ h1 {
 }
 
 .note {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #444444;
   padding: 0;
   margin: 0;
   display: inline-block;
-  line-height: 1rem;
 }
 
 .container {
