@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>bit.ly/nappistaidot</h1>
+      <span class="note">
+        Harjoitus opettaa yleisimpien tietokoneen pikanäppäimien käyttöä. Se on kehitetty hyödyntäen <i>fuck around, find out</i> -pedagogiikkaa. Testaa alla listattuja pikanäppäimiä ja kirjoita niiden viereen, mitä ne tekevät.
+      </span>
+      <div class="segment">
+        <div class="subsegment">
+          <h3>Sovellusten avaaminen</h3>
+          <div class="row">
+            <code>Win</code>+<code>E</code>
+          </div>
+          <div class="row">
+            <code>Win</code>+"Chrome"
+          </div>
+          <div class="row">
+            <code>Win</code>+"Wordpad"
+          </div>
+        </div>
+      </div>
+      <div class="segment">
+        <div class="subsegment">
+          <h3>Navigaatio ja ikkunoiden hallinta</h3>
+          <span class="note">(testaa kun useampia sovelluksia auki)</span>
+          <div class="row">
+            <code>Alt</code>+<code>Tab</code>
+          </div>
+
+          <div class="row">
+            <code>Alt</code>+<code>Shift</code>+<code>Tab</code>
+          </div>
+
+          <div class="row">
+            <code>Win</code>+<code>Nuolet</code>
+          </div>
+
+          <div class="row">
+            <code>Ctrl</code>+<code>Alt</code>+<code>Delete</code>
+          </div>
+        </div>
+      </div>
+      <div class="segment">
+        <div class="subsegment">
+          <h3>Kuvankaappaukset</h3>
+          <!-- <span class="note">(osa komennoista tallentaa kuvankaappauksen leikepöydälle, osa kansioon Pictures/Screenshots)</span> -->
+          <div class="row">
+            <code>PrtScn</code>
+          </div>
+          <div class="row">
+            <code>Win</code>+<code>PrtScn</code>
+          </div>
+          <div class="row">
+            <code>Win</code>+<code>Shift</code>+<code>S</code>
+          </div>
+        </div>
+      </div>
+      <div class="segment">
+        <div class="subsegment">
+          <h3>Tekstinkäsittely</h3>
+          <span class="note">(testaa kun tekstikenttä aktiivisena, esim. nettiselaimessa tai Worldissa)</span>
+          <h4>Tekstissä liikkuminen</h4>
+          <div class="row">
+            <code>Home</code>
+          </div>
+          <div class="row">
+            <code>End</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>Home</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>End</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>Nuolet</code>
+          </div>
+        </div>
+        <div class="subsegment">
+          <h4>Tekstin valinta</h4>
+          <div class="row">
+            <code>Shift</code>+<code>Nuolet</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>Shift</code>+<code>Nuolet</code> <!-- ←↓↑→ -->
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>A</code> <!-- ←↓↑→ -->
+          </div>
+        </div>
+        <!-- <div class="row"> -->
+        <!--   <code>Ctrl</code>+<code>Backspace</code> -->
+        <!-- </div> -->
+        <div class="subsegment">
+          <h4>Kopiointi ja leikkaaminen (leikepöytä)</h4>
+          <div class="row">
+            <code>Ctrl</code>+<code>C</code> <p class="note">(kun tekstiä valittuna)</p>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>V</code> <span class="note">(kun tekstiä kopioituna)</span>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>X</code> <span class="note">(kun tekstiä valittuna)</span>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>X</code>→<code>Ctrl</code>+<code>V</code> <span class="note">(kun tekstiä valittuna)</span>
+          </div>
+        </div>
+      </div>
+      <div class="segment">
+        <div class="subsegment">
+          <h3>Nettiselain</h3>
+          <h4>Välilehdet</h4>
+          <div class="row">
+            <code>Ctrl</code>+<code>T</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>W</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>L</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>R</code> <span class="note">(kun nettisivu auki)</span>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>F</code> <span class="note">(kun nettisivu auki)</span>
+          </div>
+        </div>
+        <div class="subsegment">
+          <h4>Zoom ja ikkuna</h4>
+          <div class="row">
+            <code>Ctrl</code>+<code>+</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>-</code>
+          </div>
+          <div class="row">
+            <code>Ctrl</code>+<code>0</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function appendInputToRows() {
+      const rows = document.querySelectorAll('.row');
+
+      rows.forEach(row => {
+        const input = document.createElement('textarea');
+        input.type = 'text'; // Set type to 'text'
+        input.addEventListener("input", function(){
+          this.style.height = '0px';
+          this.style.height = this.scrollHeight + 'px';
+          this.parentElement.style.height = this.scrollHeight + 'px';
+        })
+        row.appendChild(input);
+      });
+    }
+    appendInputToRows();
+
+    function saveTextareaValues() {
+      const textareas = document.querySelectorAll('textarea');
+      textareas.forEach((textarea, index) => {
+        localStorage.setItem(`textarea-${index}`, textarea.value);
+      });
+    }
+
+    // Function to load values from localStorage
+    function loadTextareaValues() {
+      const textareas = document.querySelectorAll('textarea');
+      textareas.forEach((textarea, index) => {
+        const savedValue = localStorage.getItem(`textarea-${index}`);
+        if (savedValue !== null) {
+          textarea.value = savedValue;
+        }
+      });
+    }
+
+    window.addEventListener('load', loadTextareaValues);
+
+    document.querySelectorAll('textarea').forEach(textarea => {
+      textarea.addEventListener('input', saveTextareaValues);
+    });
+  </script>
+</html>
+
