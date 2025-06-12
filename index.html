@@ -9,19 +9,19 @@
   <body>
     <div class="container">
       <h1><a href="https://bit.ly/nappisninja">bit.ly/<span class="title">NäppisNinja</span></a></h1>
-      <span class="note">
-        NäppisNinja opettaa yleisimpien tietokoneen pikanäppäinten käyttöä. Se on kehitetty hyödyntämään <i>fuck around, find out</i> -pedagogiikkaa. Testaa alla listattuja pikanäppäimiä ja kirjoita niiden viereen, mitä niistä tapahtuu. Täytettyäsi dokumentin voit tulostaa sen pikanäppäimellä Ctrl+P.
+      <span class="note intro">
+        NäppisNinja opettaa Windows-käyttöjärjestelmän yleisimpien pikanäppäinten käyttöä. Se on kehitetty hyödyntämään <i>fuck around, find out</i> -pedagogiikkaa. Testaa alla listattuja pikanäppäimiä ja kirjoita niiden viereen, mitä niistä tapahtuu (Osaan on jo täytetty esimerkkivastaus). Täytettyäsi dokumentin voit tulostaa sen pikanäppäimellä Ctrl+P.
       </span>
       <div class="segment">
         <div class="subsegment">
           <h3>Sovellusten avaaminen</h3>
-          <div class="row" id="win+e">
+          <div class="row" id="win+e" data-answer="Avaa tiedostojenhallinnan" data-example="true">
             <code>Win</code>+<code>E</code>
           </div>
-          <div class="row" id="win+chrome">
+          <div class="row" id="win+chrome" data-answer="Avaa Chromen">
             <code>Win</code>+"Chrome"
           </div>
-          <div class="row" id="win+wordpad">
+          <div class="row" id="win+wordpad" data-answer="Avaa Wordpadin">
             <code>Win</code>+"Wordpad"
           </div>
         </div>
@@ -30,19 +30,19 @@
         <div class="subsegment">
           <h3>Navigaatio ja ikkunoiden hallinta</h3>
           <span class="note">(testaa kun useampia sovelluksia auki)</span>
-          <div class="row" id="alt+tab">
+          <div class="row" id="alt+tab" data-answer="Vaihtaa seuraavaan sovellukseen">
             <code>Alt</code>+<code>Tab</code>
           </div>
 
-          <div class="row" id="alt+shift+tab">
+          <div class="row" id="alt+shift+tab" data-answer="Vaihtaa edelliseen sovellukseen">
             <code>Alt</code>+<code>Shift</code>+<code>Tab</code>
           </div>
 
-          <div class="row" id="win+nuolet">
+          <div class="row" id="win+nuolet" data-answer="Vaihtaa ikkunan sijaintia">
             <code>Win</code>+<code>Nuolet</code>
           </div>
 
-          <div class="row" id="ctrl+alt+delete">
+          <div class="row" id="ctrl+alt+delete" data-answer="Avaa Tehtävienhallinnan">
             <code>Ctrl</code>+<code>Alt</code>+<code>Delete</code>
           </div>
         </div>
@@ -50,14 +50,14 @@
       <div class="segment">
         <div class="subsegment">
           <h3>Kuvankaappaukset</h3>
-          <!-- <span class="note">(osa komennoista tallentaa kuvankaappauksen leikepöydälle, osa kansioon Pictures/Screenshots)</span> -->
-          <div class="row" id="prtscn">
+          <span class="note">(osa komennoista tallentaa kuvankaappauksen leikepöydälle, osa kansioon Pictures/Screenshots)</span>
+          <div class="row" id="prtscn" data-answer="Näytänkaappauksen leikepöydälle" data-example="true">
             <code>PrtScn</code>
           </div>
-          <div class="row" id="win+prtscn">
+          <div class="row" id="win+prtscn" data-answer="Näytönkaappaus tiedostoon" data-example="true">
             <code>Win</code>+<code>PrtScn</code>
           </div>
-          <div class="row" id="win+shift+s">
+          <div class="row" id="win+shift+s" data-answer="Näytönkaappaus">
             <code>Win</code>+<code>Shift</code>+<code>S</code>
           </div>
         </div>
@@ -67,32 +67,48 @@
           <h3>Tekstinkäsittely</h3>
           <span class="note">(testaa kun tekstikenttä aktiivisena, esim. nettiselaimessa tai Wordissa)</span>
           <h4>Tekstissä liikkuminen</h4>
-          <div class="row" id="home">
+          <div class="row" id="home" data-answer="Kursori rivin alkuun">
             <code>Home</code>
           </div>
-          <div class="row" id="end">
+          <div class="row" id="end" data-answer="Kursori rivin loppuun">
             <code>End</code>
           </div>
-          <div class="row" id="ctrl+home">
+          <div class="row" id="ctrl+home" data-answer="Kursori tekstin alkuun">
             <code>Ctrl</code>+<code>Home</code>
           </div>
-          <div class="row" id="ctrl+end">
+          <div class="row" id="ctrl+end" data-answer="Kursori tekstin loppuun">
             <code>Ctrl</code>+<code>End</code>
           </div>
-          <div class="row" id="ctrl+nuolet">
+          <div class="row" id="ctrl+nuolet" data-answer="Liikuttaa kursoria sana kerrallaan">
             <code>Ctrl</code>+<code>Nuolet</code>
           </div>
         </div>
         <div class="subsegment">
           <h4>Tekstin valinta</h4>
-          <div class="row" id="shift+nuolet">
+          <div class="row" id="shift+nuolet" data-answer="Liikuttaa valintaa kirjain kerrallaan" data-example="true">
             <code>Shift</code>+<code>Nuolet</code>
           </div>
-          <div class="row" id="ctrl+shift+nuolet">
+          <div class="row" id="ctrl+shift+nuolet" data-answer="Liikuttaa valintaa sana kerrallaan">
             <code>Ctrl</code>+<code>Shift</code>+<code>Nuolet</code> <!-- ←↓↑→ -->
           </div>
-          <div class="row" id="ctrl+a">
+          <div class="row" id="ctrl+a" data-answer="Valitsee kaiken">
             <code>Ctrl</code>+<code>A</code> <!-- ←↓↑→ -->
+          </div>
+        </div>
+
+        <div class="subsegment">
+          <h4>Tekstin muotoilu</h4>
+          <div class="row" id="ctrl+u" data-answer="Alleviivaa valinnan (underline)">
+            <code>Ctrl</code>+<code>U</code>
+            <p class="note">(kun tekstiä valittuna)</p>
+          </div>
+          <div class="row" id="ctrl+b" data-answer="Lihavoi valinnan (bold)">
+            <code>Ctrl</code>+<code>B</code>
+            <p class="note">(kun tekstiä valittuna)</p>
+          </div>
+          <div class="row" id="ctrl+i" data-answer="Kursivoi valinnan (italics)">
+            <code>Ctrl</code>+<code>I</code>
+            <p class="note">(kun tekstiä valittuna)</p>
           </div>
         </div>
         <!-- <div class="row"> -->
@@ -100,16 +116,16 @@
         <!-- </div> -->
         <div class="subsegment">
           <h4>Kopiointi ja leikkaaminen (leikepöytä)</h4>
-          <div class="row" id="ctrl+c">
+          <div class="row" id="ctrl+c" data-answer="Kopioi valinnan leikepöydälle" data-example="true">
             <code>Ctrl</code>+<code>C</code> <p class="note">(kun tekstiä valittuna)</p>
           </div>
-          <div class="row" id="ctrl+v">
+          <div class="row" id="ctrl+v" data-answer="Liittää tekstin leikepöydältä">
             <code>Ctrl</code>+<code>V</code> <span class="note">(kun tekstiä kopioituna)</span>
           </div>
-          <div class="row" id="ctrl+x">
+          <div class="row" id="ctrl+x" data-answer="Leikkaa valinnan (ja tallentaa sen leikepöydälle)">
             <code>Ctrl</code>+<code>X</code> <span class="note">(kun tekstiä valittuna)</span>
           </div>
-          <div class="row" id="ctrl+x=>ctrl+v">
+          <div class="row" id="ctrl+x=>ctrl+v" data-answer="Leikkaa valinnan ja liittää sen takaisin">
             <code>Ctrl</code>+<code>X</code>→<code>Ctrl</code>+<code>V</code> <span class="note">(kun tekstiä valittuna)</span>
           </div>
         </div>
@@ -118,79 +134,37 @@
         <div class="subsegment">
           <h3>Nettiselain</h3>
           <h4>Välilehdet</h4>
-          <div class="row" id="ctrl+t">
+          <div class="row" id="ctrl+t" data-answer="Avaa uuden välilehden" data-example="true">
             <code>Ctrl</code>+<code>T</code>
           </div>
-          <div class="row" id="ctrl+w">
+          <div class="row" id="ctrl+w" data-answer="Sulkee välilehden">
             <code>Ctrl</code>+<code>W</code>
           </div>
-          <div class="row" id="ctrl+l">
+          <div class="row" id="ctrl+l" data-answer="Aktivoi haku-/osoitekentän">
             <code>Ctrl</code>+<code>L</code>
           </div>
-          <div class="row" id="ctrl+r">
+          <div class="row" id="ctrl+r" data-answer="Uudelleenlataa nettisivun">
             <code>Ctrl</code>+<code>R</code> <span class="note">(kun nettisivu auki)</span>
           </div>
-          <div class="row" id="ctrl+f">
+          <div class="row" id="ctrl+f" data-answer="Etsii tekstiä nettisivulta">
             <code>Ctrl</code>+<code>F</code> <span class="note">(kun nettisivu auki)</span>
           </div>
         </div>
         <div class="subsegment">
           <h4>Zoom ja ikkuna</h4>
-          <div class="row" id="ctrl+plus">
+          <div class="row" id="ctrl+plus" data-answer="Zoomaa sisään">
             <code>Ctrl</code>+<code>+</code>
           </div>
-          <div class="row" id="ctrl+minus">
+          <div class="row" id="ctrl+minus" data-answer="Zoomaa ulos">
             <code>Ctrl</code>+<code>-</code>
           </div>
-          <div class="row" id="ctrl+0">
+          <div class="row" id="ctrl+0" data-answer="Asettaa zoomin oletusarvoon">
             <code>Ctrl</code>+<code>0</code>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script>
-    function appendInputToRows() {
-      const rows = document.querySelectorAll('.row');
-
-      rows.forEach(row => {
-        const input = document.createElement('textarea');
-        input.type = 'text'; // Set type to 'text'
-        input.addEventListener("input", function(){
-          this.style.height = '0px';
-          this.style.height = this.scrollHeight + 'px';
-          this.parentElement.style.height = this.scrollHeight + 'px';
-        })
-        row.appendChild(input);
-      });
-    }
-    appendInputToRows();
-
-    function saveTextareaValues() {
-      const textareas = document.querySelectorAll('textarea');
-      textareas.forEach((textarea, index) => {
-        let id = textarea.parentElement.id;
-        localStorage.setItem(`field-${id}`, textarea.value);
-      });
-    }
-
-    // Function to load values from localStorage
-    function loadTextareaValues() {
-      const textareas = document.querySelectorAll('textarea');
-      textareas.forEach((textarea, index) => {
-        let id = textarea.parentElement.id;
-        const savedValue = localStorage.getItem(`field-${id}`);
-        if (savedValue !== null) {
-          textarea.value = savedValue;
-        }
-      });
-    }
-
-    window.addEventListener('load', loadTextareaValues);
-
-    document.querySelectorAll('textarea').forEach(textarea => {
-      textarea.addEventListener('input', saveTextareaValues);
-    });
-  </script>
+  <script src="scripts.js"></script>
 </html>
 

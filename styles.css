@@ -4,10 +4,14 @@ html {
 
 @media print {
   html {
-    font-size: 8px;
+    font-size: 6px;
   }
   .subsegment {
     break-inside: avoid;
+  }
+  .intro, .note {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -60,7 +64,7 @@ h1, h2, h3, h4 {
   /* padding-top: 1rem; */
 }
 h1 a {
-  color: #AAAAAA;
+  color: #BBBBBB;
   text-decoration: none;
 }
 h1 .title {
