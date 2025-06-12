@@ -13,6 +13,9 @@ html {
     display: none;
     visibility: hidden;
   }
+  code {
+    box-shadow: none !important;
+  }
 }
 
 body {
